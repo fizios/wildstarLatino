@@ -1,0 +1,10 @@
+.container.building .span6{
+	overflow: hidden;
+	border: 5px solid;
+	border-radius: 15px;
+	margin: 40px 0 0 210px;
+	width: 510px;
+}
+.container.building .span6 h1{
+	margin-left: 50px;
+}

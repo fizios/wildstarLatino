@@ -1,0 +1,62 @@
+.main-titulo {
+margin: 20px 0;
+width: 90%;
+}
+.main-titulo .titulo{
+float: left;
+
+}
+.titulo.letraW{
+	background: url("/imagenes/fontsV2.png") no-repeat -193 -212;
+	width: 101px;
+	height: 50px;
+}
+.titulo.letraI{
+	background: url("/imagenes/fontsV2.png") no-repeat -113 -70;
+width: 18px;
+height: 50px;
+}
+.titulo.letraL{
+background: url("/imagenes/fontsV2.png") no-repeat -224 -70;
+width: 47px;
+height: 50px;
+}
+.titulo.letraD{
+background: url("/imagenes/fontsV2.png") no-repeat -187 0;
+width: 59px;
+height: 50px;
+}
+.titulo.letraS{
+background: url("/imagenes/fontsV2.png") no-repeat -328 -144;
+width: 62px;
+height: 50px;
+}
+.titulo.letraT{
+background: url("/imagenes/fontsV2.png") no-repeat -7 -212;
+width: 67px;
+height: 50px;
+}
+.titulo.letraA{
+	background: url("/imagenes/fontsV2.png") no-repeat -20 0;
+	width: 75px;
+	height: 50px;
+}
+.titulo.letraR{
+background: url("/imagenes/fontsV2.png") no-repeat -249 -143;
+width: 75px;
+height: 50px;
+}
+.titulo.letraN{
+background: url("/imagenes/fontsV2.png") no-repeat 1 -143;
+width: 58px;
+height: 50px;
+}
+.titulo.letraO{
+background: url("/imagenes/fontsV2.png") no-repeat -57 -144;
+width: 56px;
+height: 50px;
+}
+.titulo.letra-{
+width: 56px;
+height: 50px;
+}

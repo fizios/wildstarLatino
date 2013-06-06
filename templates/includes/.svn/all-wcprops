@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/wildstar_latino/!svn/ver/28/trunk/templates/includes
+END
+master-header.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wildstar_latino/!svn/ver/26/trunk/templates/includes/master-header.php
+END
+navigation-bar.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/wildstar_latino/!svn/ver/28/trunk/templates/includes/navigation-bar.php
+END
+facebook_code.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wildstar_latino/!svn/ver/26/trunk/templates/includes/facebook_code.php
+END
+master-footer.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wildstar_latino/!svn/ver/28/trunk/templates/includes/master-footer.php
+END

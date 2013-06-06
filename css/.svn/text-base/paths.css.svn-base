@@ -1,0 +1,25 @@
+div.container .path li{
+	list-style: none;
+	float: left;
+	width: 44%;
+}
+div.container .path li img{
+	width: 30px;
+	float: left;
+}
+div.container .path li p{
+	font-size: 13px;
+	padding-left: 35px;
+}
+div.container .span11{
+	border: 4px solid;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+div.container .span11 .misiones{
+	padding-left: 50px;
+}
+div.container .span11 iframe{
+	margin: 10px 0px 10px 130px;
+}
+

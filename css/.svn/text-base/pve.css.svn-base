@@ -1,0 +1,7 @@
+.container.pve .container{
+	margin: 20px auto;
+	width: 450px;
+}
+.container.pve .container img{
+border: 1px solid;
+}

@@ -1,0 +1,28 @@
+.noticias .row, .noticias .row-fluid{
+  padding: 10px;
+  margin-bottom:10px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  background-color: #000509;
+}
+.noticias {
+  margin: 0;
+}
+.adds img{
+  	margin-bottom: 10px;
+	border: 1px solid white;
+}
+
+.footer{
+  border:1px solid black;
+  height: 50px;
+}
+
+.fb-like-box{
+	border: 1px solid;
+	border-radius: 5;
+	margin-bottom: 5px;
+	width: 100%;
+	padding-bottom: 5px;
+	background-color: white;
+}

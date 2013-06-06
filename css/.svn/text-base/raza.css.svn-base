@@ -1,0 +1,6 @@
+.container.raza .span10{
+background-color: #000509;
+}
+.container.raza .span10.imagen{
+border: 1px solid;
+}

@@ -1,0 +1,31 @@
+.game div.container .razas .span2{
+	margin: 0;
+}
+
+.game div.container .clases .span2 {
+	width: 100px;
+	border: 2px solid white;
+	height: 135px;
+	margin: 60px;
+}
+.game div.container .clases .span2:hover,.game div.container .paths .span2:hover{
+	border-color: #005580;
+}
+.game div.container .paths .span2 {
+	width: 160px;
+	border: 2px solid;
+	height: 175px;
+	margin: 37px;
+}
+
+
+.game div.container.regiones .iconos img{
+	margin: 0 110px;
+}
+.game div.container.housing a img{
+	border: 1px solid white;
+	margin-left: 100px;
+}
+.game div.container.housing a img:hover{
+	border-color: #005580;
+}

@@ -1,0 +1,10 @@
+.container.clase .span10{
+background-color: #000509;
+}
+.container.clase .span10.imagen{
+border: 1px solid;
+}
+.container.clase .caracteristicas li{
+list-style: none;
+margin-left: 75px;
+}

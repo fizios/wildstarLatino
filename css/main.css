@@ -1,0 +1,90 @@
+body#WL-Body{
+	background:#000509 url(/imagenes/main-bg.jpg) no-repeat 50% 0;
+	color: white;
+}
+
+body#WL-Body h3, body#WL-Body h1, body#WL-Body h4{
+	color: white;
+}
+
+.footer.container{
+	border: none;
+}
+.footer.container p {
+text-align: center;
+font-size: 12px;
+line-height: 0.6;
+}
+.footer .brands{
+overflow: hidden;
+margin: 20px 0;
+}
+.footer .brands ul {
+display: inline;
+overflow: hidden;
+width: 100%;
+margin: 0 auto;
+}
+.footer .brands li {
+width: 17%;
+float: left;
+margin: 0 45px;
+}
+.footer .disclaimer{
+display: block;
+padding: 20px 0;
+}
+
+.footer .sociales a{
+	display: inline-block;
+background: transparent url(/imagenes/iconos/redes-sociales/footer_sprite.png);
+width: 50px;
+height: 50px;
+margin: 0 10px 5px 21px;
+}
+.footer .sociales{
+	border: 2px solid;
+	border-radius: 30px;
+	background-color: black;
+}
+.footer .sociales a.facebook{
+	background-position: 0 0px;
+}
+.footer .sociales a.facebook:hover{
+	background-position: 0 53.9px;
+}
+.footer .sociales a.twitter{
+	background-position: -59px 0px;
+}
+.footer .sociales a.twitter:hover{
+	background-position: -59px 53.9px;
+}
+.footer .sociales a.raptr{
+	background-position: -118px 0px;
+}
+.footer .sociales a.raptr:hover{
+	background-position: -118px 53.9px;
+}
+
+
+.menu-social div{
+	background-image: url("/imagenes/iconos/redes-sociales/social-icons.png");
+	background-position: 0 0;
+	width: 25px;
+	height: 25px;
+}
+.menu-social div.facebook{
+}
+.menu-social div.twitter{
+	background-position: -34 0;
+}
+
+.container.body{
+	min-height: 620px;
+}
+
+.container a:hover{
+	text-decoration: none;
+	color: #005580;
+}
+

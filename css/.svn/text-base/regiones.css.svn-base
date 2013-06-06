@@ -1,0 +1,10 @@
+.container.regiones .span10{
+}
+.container.regiones .span10 .icono-faccion{
+	float: left;
+	margin-right: 25px;
+	height: 120px;
+}
+.container.regiones .span10 ul{
+	margin-left: 270px;
+}

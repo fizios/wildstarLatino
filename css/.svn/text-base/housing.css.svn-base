@@ -1,0 +1,17 @@
+.container.housing {
+margin: 30px 0;
+border: 3px solid;
+border-radius: 15;
+}
+.container.housing .row{
+	background-color: #000509;
+}
+.container.housing .span5{
+	margin: 30px 10px;
+}
+.container.housing .span5 img{
+	height: 390px;
+}
+.housing.videos iframe{
+	margin: 10px 0px 10px 130px;
+}
