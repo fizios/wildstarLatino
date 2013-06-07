@@ -1,0 +1,64 @@
+AddDefaultCharset utf-8
+Options -Indexes
+RewriteEngine on
+RewriteBase /
+
+# Seteo la home
+DirectoryIndex index.php
+
+#News
+Rewriterule ^news/?$ /templates/news.php
+Rewriterule ^news/noticia/(.*)?$ /templates/noticia.php?noticia=$1
+
+#Razas
+Rewriterule ^razas/?$ /templates/razas.php
+Rewriterule ^razas/Human/?$ /templates/raza.php?id=1
+Rewriterule ^razas/Aurin/?$ /templates/raza.php?id=2
+Rewriterule ^razas/Granok/?$ /templates/raza.php?id=3
+Rewriterule ^razas/Cassian/?$ /templates/raza.php?id=4
+Rewriterule ^razas/Mechari/?$ /templates/raza.php?id=5
+Rewriterule ^razas/Draken/?$ /templates/raza.php?id=6
+
+#Clases
+Rewriterule ^clases/?$ /templates/clases.php
+Rewriterule ^clases/Warrior/?$ /templates/clase.php?id=1
+Rewriterule ^clases/Esper/?$ /templates/clase.php?id=2
+Rewriterule ^clases/Stalker/?$ /templates/clase.php?id=3
+Rewriterule ^clases/Spellslinger/?$ /templates/clase.php?id=4
+
+#Gameplay
+Rewriterule ^game/?$ /templates/game.php
+
+#Regiones
+Rewriterule ^regiones/?$ /templates/regiones.php
+
+#Paths
+Rewriterule ^paths/?$ /templates/paths.php
+
+#Housing
+Rewriterule ^housing/?$ /templates/housing.php
+
+#PVE
+Rewriterule ^pve/?$ /templates/pve.php
+Rewriterule ^pve/dungeons/?$ /templates/dungeons.php
+Rewriterule ^pve/raids/?$ /templates/raids.php
+Rewriterule ^pve/eldergames?$ /templates/elderGames.php
+
+#PVP
+Rewriterule ^pvp/?$ /templates/pvp.php
+Rewriterule ^pvp/battleground/?$ /templates/battlegrounds.php
+Rewriterule ^pvp/arena/?$ /templates/arenas.php
+Rewriterule ^pvp/warplots?$ /templates/warplots.php
+
+#Media
+Rewriterule ^media/?$ /templates/media.php
+
+#Admin
+Rewriterule ^content-admin/?$ /templates/admin/login.php
+Rewriterule ^content-admin/admin/?$ /templates/admin/menu.php
+#News Admin
+Rewriterule ^content-admin/noticias/?$ /templates/admin/Noticias/noticias_list.php
+Rewriterule ^content-admin/noticias/nuevo/?$ /templates/admin/Noticias/noticias_abm.php
+Rewriterule ^content-admin/noticias/editar/(.*)/?$ /templates/admin/Noticias/noticias_abm.php?id=$1
+Rewriterule ^content-admin/noticias/accion/(.*)/(.*)/?$ /src/Admin/Noticias/dbActionNoticias.php?action=$1&id=$2
+
