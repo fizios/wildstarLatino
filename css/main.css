@@ -1,11 +1,18 @@
 body#WL-Body{
-	background:#000509 url(/imagenes/main-bg.jpg) no-repeat 50% 0;
+	background: url(/imagenes/main-bg.jpg) no-repeat 50% 0;
 	color: white;
+	background-color: #000509;
+	font-family: "Comic Sans MS";	
+}
+
+h1, h2, h3, h4, h5{
+	font-family: "Comic Sans MS";	
 }
 
 body#WL-Body h3, body#WL-Body h1, body#WL-Body h4{
 	color: white;
 }
+
 
 .footer.container{
 	border: none;

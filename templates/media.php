@@ -1,9 +1,13 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'].'/includes/loader.php';
+include $_SERVER['DOCUMENT_ROOT'].'/src/Media/Media.php';
 
-$page_name = "media";
+$page_name = "";
 
-$divshot_css = "https://djyhxgczejc94.cloudfront.net/builds/a078ced5eeec49a92f29498b6223496fa330a79e.css";
+$css_array[]="";
+$js_array[]="";
+
+$media = new Media();
 
 ?>
 

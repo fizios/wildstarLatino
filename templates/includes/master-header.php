@@ -4,11 +4,11 @@ error_reporting(E_ALL);
 
 $css_array[] = "bootstrap.css";
 $css_array[] = "bootstrap-responsive.css";
+$css_array[] = "normalize.css";
+$css_array[] = "foundation.css";
 $css_array[] = "main.css";
 $css_array[] = "titulo.css";
 $css_array[] = "nav-bar.css";
-$css_array[] = "normalize.css";
-$css_array[] = "foundation.css";
 
 $main_js_array[] = "jquery.min.js";
 $main_js_array[] = "bootstrap.min.js";
@@ -29,7 +29,6 @@ if (isset($js_array)){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <link rel="shortcut icon" href="/imagenes/Icons/icon_sigil.jpg"/>
-    <link rel="stylesheet" href="<?php echo $divshot_css?>">
     <?php foreach ($css_array as $css):?>
     	<link rel="stylesheet" href="/css/<?php echo $css?>">
     <?php endforeach;?>
