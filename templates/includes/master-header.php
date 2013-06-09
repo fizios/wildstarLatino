@@ -6,11 +6,13 @@ $css_array[] = "bootstrap.css";
 $css_array[] = "bootstrap-responsive.css";
 $css_array[] = "normalize.css";
 $css_array[] = "foundation.css";
+$css_array[] = "jquery-ui.css";
 $css_array[] = "main.css";
 $css_array[] = "titulo.css";
 $css_array[] = "nav-bar.css";
 
 $main_js_array[] = "jquery.min.js";
+$main_js_array[] = "jquery-ui.min.js";
 $main_js_array[] = "bootstrap.min.js";
 $main_js_array[] = "nav-bar.js";
 
@@ -43,7 +45,7 @@ if (isset($js_array)){
       <div class="container header">
       	<div class="row">
       		<div class="span5 offset2 main-titulo">
-      			<img src="/imagenes/logo-wildstar-latino.png" alt="Wildstar Latino" />
+      			<a href="/"><img src="/imagenes/logo-wildstar-latino.png" alt="Wildstar Latino" /></a>
       		</div>
       	</div>
         <?php include 'navigation-bar.php'?>

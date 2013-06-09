@@ -1,0 +1,13 @@
+.videos li {
+width: 240px;
+list-style: none;
+border: 1px solid;
+margin: 15px;
+float: left;
+background-color: black;
+}
+
+.videos p{
+	text-align: center;
+	margin: 0;
+}
