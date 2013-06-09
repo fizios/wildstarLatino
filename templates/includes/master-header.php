@@ -42,24 +42,8 @@ if (isset($js_array)){
     <div class="container">
       <div class="container header">
       	<div class="row">
-      		<div class="span10 main-titulo">
-      			<a href="/">
-			      	<div class="titulo letraW"></div>
-			      	<div class="titulo letraI"></div>
-			      	<div  class="titulo letraL"></div>
-			      	<div  class="titulo letraD"></div>
-			      	<div  class="titulo letraS"></div>
-			      	<div  class="titulo letraT"></div>
-			      	<div  class="titulo letraA"></div>
-			      	<div  class="titulo letraR"></div>
-			      	<div  class="titulo letra-"></div>
-			      	<div  class="titulo letraL"></div>
-			      	<div  class="titulo letraA"></div>
-			      	<div  class="titulo letraT"></div>
-			      	<div  class="titulo letraI"></div>
-			      	<div  class="titulo letraN"></div>
-			      	<div  class="titulo letraO"></div>
-	        	</a>
+      		<div class="span5 offset2 main-titulo">
+      			<img src="/imagenes/logo-wildstar-latino.png" alt="Wildstar Latino" />
       		</div>
       	</div>
         <?php include 'navigation-bar.php'?>

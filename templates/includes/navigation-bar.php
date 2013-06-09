@@ -43,7 +43,13 @@
                                 <li><a href="/pvp/warplots">Warplots</a></li>
                             </ul>
                         </li>
-						<li class="multimedia"><a href="/media">Media</a>
+						<li class="multimedia">
+								<a href="/media">Media</a>
+								
+								<ul class="unstyled navbar-inner">
+	                                <li><a href="/media/imagenes">Imagenes</a></li>
+	                                <li><a href="/media/videos">Videos</a></li>
+	                            </ul>
 						</li>
 						<li><a href="http://www.wildstar-esp.com/foro/" target="_blank">Foro</a>
 						</li>
@@ -51,6 +57,5 @@
 				</div>
 			</div>
 		</div>
-		
 	</div>	
 </div>

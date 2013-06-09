@@ -1,13 +1,14 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'].'/includes/loader.php';
-include $_SERVER['DOCUMENT_ROOT'].'/src/Media/Media.php';
+include $_SERVER['DOCUMENT_ROOT'].'/src/Media/Videos.php';
 
-$page_name = "Media";
+$page_name = "Videos";
+
+$divshot_css = "";
 
 $css_array[]="";
 $js_array[]="";
 
-$media = new Media();
 
 ?>
 

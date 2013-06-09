@@ -1,7 +1,7 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'].'/includes/loader.php';
 
-$page_name = "";
+$page_name = "Warplots";
 
 $divshot_css = "";
 

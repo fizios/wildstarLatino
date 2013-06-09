@@ -52,6 +52,8 @@ Rewriterule ^pvp/warplots?$ /templates/warplots.php
 
 #Media
 Rewriterule ^media/?$ /templates/media.php
+Rewriterule ^media/imagenes/?$ /templates/imagenes.php
+Rewriterule ^media/videos/?$ /templates/videos.php
 
 #Admin
 Rewriterule ^content-admin/?$ /templates/admin/login.php
