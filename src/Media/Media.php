@@ -12,10 +12,10 @@ class Media extends WLClases{
 		parent::__construct();
 		
 		$imagenes = new Imagenes();
-		$this->imagenes = $imagenes->getImagenes();
+		$this->imagenes = $imagenes->getImagenes(8);
 		
-		// $videos = new Videos();
-		// $this->videos = $videos->getVideos();
+		$videos = new Videos();
+		$this->videos = $videos->getVideos(8);
 	}
 }
 ?>

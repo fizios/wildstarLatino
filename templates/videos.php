@@ -7,7 +7,8 @@ $page_name = "Videos";
 $divshot_css = "";
 
 $css_array[]="videos.css";
-$js_array[]="jquery.youtubepopup.js";
+$css_array[]="jquery.fancybox-1.3.4.css";
+$js_array[]="jquery.fancybox-1.3.4.js";
 $js_array[]="videos.js";
 
 $videos = new Videos();
@@ -22,7 +23,7 @@ $videos = new Videos();
 	<ul class="videos-list">
 		<?php foreach ($videos->getVideos() as $key => $video): ?>
 			<li>
-				<a class="youtube"  href="http://www.youtube.com/embed/<?php echo $video['youtube-id'] ?>" >
+				<a class="youtube iframe"  href="http://www.youtube.com/embed/<?php echo $video['youtube-id'] ?>?autoplay=1" >
 					<p><?php echo $video['nombre'] ?></p>
 					<img src="http://img.youtube.com/vi/<?php echo $video['youtube-id'] ?>/0.jpg" />
 				</a>

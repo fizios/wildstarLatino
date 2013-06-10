@@ -7,7 +7,7 @@
 				    <li><a href="http://www.ncsoft.com/"><img src="/imagenes/footer/ncsoft.png"/></a></li>
 				    <li><a href="http://www.carbine.com/"><img src="/imagenes/footer/carbine.png"/></a></li>
 				    <li><a href="http://www.wildstar-online.com/"><img src="/imagenes/footer/wildstar.png"/></a></li>
-				    <li><a href="http://www.esbr.org/"><img src="/imagenes/footer/esrb.png"/></a></li>
+				    <li><a href="http://www.esrb.org/"><img src="/imagenes/footer/esrb.png"/></a></li>
 			    </ul>
 		    </div>
 		    

@@ -13,7 +13,12 @@ class Videos extends WLClases{
 	}
 	
 	public function getVideos($cant = 0){
-		return $this->videos;
+		if ($cant == 0) {
+			return $this->videos;
+		} else {
+			return array_slice($this->videos,0,$cant);			
+		}
+		
 	}
 }
 	

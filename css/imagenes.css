@@ -1,0 +1,13 @@
+.imagenes li{
+	width: 250px;
+	height: 140;
+	list-style: none;
+	float: left;
+	margin: 15px;
+	border: 1px solid;
+	border-radius: 3px;
+}
+#WL-Body #fancybox-right-ico, #WL-Body #fancybox-left-ico{
+	background-image: url('/imagenes/iconos/botones/fancybox.png');
+}
+

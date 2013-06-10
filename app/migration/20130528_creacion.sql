@@ -11,7 +11,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Volcando estructura para tabla wildstardb.clases
-DROP TABLE IF EXISTS `clases`;
 CREATE TABLE IF NOT EXISTS `clases` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) NOT NULL,
@@ -37,7 +36,6 @@ INSERT INTO `clases` (`id`, `nombre`, `rol`, `descripcion_corta`, `tipo_arma`, `
 
 
 -- Volcando estructura para tabla wildstardb.clases_desc_larga
-DROP TABLE IF EXISTS `clases_desc_larga`;
 CREATE TABLE IF NOT EXISTS `clases_desc_larga` (
   `idClase` int(10) NOT NULL,
   `orden` int(10) NOT NULL,
@@ -65,7 +63,6 @@ INSERT INTO `clases_desc_larga` (`idClase`, `orden`, `texto`) VALUES
 
 
 -- Volcando estructura para tabla wildstardb.clase_raza
-DROP TABLE IF EXISTS `clase_raza`;
 CREATE TABLE IF NOT EXISTS `clase_raza` (
   `id_clase` int(10) NOT NULL,
   `id_raza` int(10) NOT NULL,
@@ -97,7 +94,6 @@ INSERT INTO `clase_raza` (`id_clase`, `id_raza`) VALUES
 
 
 -- Volcando estructura para tabla wildstardb.dungeon
-DROP TABLE IF EXISTS `dungeon`;
 CREATE TABLE IF NOT EXISTS `dungeon` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) NOT NULL,
@@ -115,8 +111,50 @@ INSERT INTO `dungeon` (`id`, `nombre`, `nivel_min`, `descripcion`, `imagen`) VAL
 /*!40000 ALTER TABLE `dungeon` ENABLE KEYS */;
 
 
+-- Volcando estructura para tabla wildstardb.imagenes
+CREATE TABLE IF NOT EXISTS `imagenes` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `url` varchar(150) NOT NULL DEFAULT '0',
+  `titulo` varchar(150) NOT NULL DEFAULT '0',
+  `seccion` varchar(50) DEFAULT NULL,
+  `subseccion` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+
+-- Volcando datos para la tabla wildstardb.imagenes: ~27 rows (aproximadamente)
+/*!40000 ALTER TABLE `imagenes` DISABLE KEYS */;
+INSERT INTO `imagenes` (`id`, `url`, `titulo`, `seccion`, `subseccion`) VALUES
+	(1, '/imagenes/contenido/REGIONES/deradune/deradune1.jpg', 'deradune', 'regiones', 'deradune'),
+	(2, '/imagenes/contenido/REGIONES/deradune/deradune1.png', 'deradune', 'regiones', 'deradune'),
+	(3, '/imagenes/contenido/REGIONES/deradune/deradune2.png', 'deradune', 'regiones', 'deradune'),
+	(4, '/imagenes/contenido/REGIONES/deradune/deradune3.png', 'deradune', 'regiones', 'deradune'),
+	(5, '/imagenes/contenido/REGIONES/deradune/Deradune8.png', 'deradune', 'regiones', 'deradune'),
+	(6, '/imagenes/contenido/REGIONES/deradune/deradune20.png', 'deradune', 'regiones', 'deradune'),
+	(7, '/imagenes/contenido/REGIONES/deradune/Deradune24.jpg', 'deradune', 'regiones', 'deradune'),
+	(8, '/imagenes/contenido/REGIONES/deradune/Logo-WildStar-Deradune.jpg', 'deradune', 'regiones', 'deradune'),
+	(9, '/imagenes/contenido/REGIONES/algaroc/algoroc1.jpg', 'Algaroc', 'regiones', 'Algaroc'),
+	(10, '/imagenes/contenido/REGIONES/algaroc/algoroc2.png', 'Algaroc', 'regiones', 'Algaroc'),
+	(11, '/imagenes/contenido/REGIONES/algaroc/algoroc3.jpg', 'Algaroc', 'regiones', 'Algaroc'),
+	(12, '/imagenes/contenido/REGIONES/algaroc/algoroc4.png', 'Algaroc', 'regiones', 'Algaroc'),
+	(13, '/imagenes/contenido/REGIONES/algaroc/algoroc5.png', 'Algaroc', 'regiones', 'Algaroc'),
+	(14, '/imagenes/contenido/REGIONES/algaroc/algoroc6.jpg', 'Algaroc', 'regiones', 'Algaroc'),
+	(15, '/imagenes/contenido/REGIONES/algaroc/algoroc7.png', 'Algaroc', 'regiones', 'Algaroc'),
+	(16, '/imagenes/contenido/REGIONES/galeras/GALERAS1.jpg', 'Galeras', 'regiones', 'Galeras'),
+	(17, '/imagenes/contenido/REGIONES/galeras/GALERAS2.jpg', 'Galeras', 'regiones', 'Galeras'),
+	(18, '/imagenes/contenido/REGIONES/galeras/GALERAS3.jpg', 'Galeras', 'regiones', 'Galeras'),
+	(19, '/imagenes/contenido/REGIONES/galeras/GALERAS4.jpg', 'Galeras', 'regiones', 'Galeras'),
+	(20, '/imagenes/contenido/REGIONES/galeras/GALERAS5.png', 'Galeras', 'regiones', 'Galeras'),
+	(21, '/imagenes/contenido/REGIONES/galeras/GALERAS6.jpg', 'Galeras', 'regiones', 'Galeras'),
+	(22, '/imagenes/contenido/REGIONES/galeras/GALERAS7.jpg', 'Galeras', 'regiones', 'Galeras'),
+	(23, '/imagenes/contenido/REGIONES/northernWilds/NORTHERN WILDS1.png', 'Northern wilds', 'regiones', 'Northern wilds'),
+	(24, '/imagenes/contenido/REGIONES/northernWilds/NORTHERN WILDS2.png', 'Northern wilds', 'regiones', 'Northern wilds'),
+	(25, '/imagenes/contenido/REGIONES/northernWilds/NORTHERN WILDS3.png', 'Northern wilds', 'regiones', 'Northern wilds'),
+	(26, '/imagenes/contenido/REGIONES/northernWilds/NORTHERN WILDS4.jpg', 'Northern wilds', 'regiones', 'Northern wilds'),
+	(27, '/imagenes/contenido/REGIONES/northernWilds/NORTHERN WILDS5.jpg', 'Northern wilds', 'regiones', 'Northern wilds');
+/*!40000 ALTER TABLE `imagenes` ENABLE KEYS */;
+
+
 -- Volcando estructura para tabla wildstardb.noticias
-DROP TABLE IF EXISTS `noticias`;
 CREATE TABLE IF NOT EXISTS `noticias` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `titulo` varchar(50) NOT NULL DEFAULT '0',
@@ -149,7 +187,6 @@ INSERT INTO `noticias` (`id`, `titulo`, `resumen`, `fecha`, `imagen`, `cuerpo`) 
 
 
 -- Volcando estructura para tabla wildstardb.paths
-DROP TABLE IF EXISTS `paths`;
 CREATE TABLE IF NOT EXISTS `paths` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) DEFAULT NULL,
@@ -170,7 +207,6 @@ INSERT INTO `paths` (`id`, `nombre`, `nombre_es`, `descripcion`, `imagen`) VALUE
 
 
 -- Volcando estructura para tabla wildstardb.paths_misiones
-DROP TABLE IF EXISTS `paths_misiones`;
 CREATE TABLE IF NOT EXISTS `paths_misiones` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `id_path` int(10) NOT NULL,
@@ -216,7 +252,6 @@ INSERT INTO `paths_misiones` (`id`, `id_path`, `nombre`, `descripcion`, `icono`)
 
 
 -- Volcando estructura para tabla wildstardb.razas
-DROP TABLE IF EXISTS `razas`;
 CREATE TABLE IF NOT EXISTS `razas` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) NOT NULL DEFAULT '',
@@ -242,7 +277,6 @@ INSERT INTO `razas` (`id`, `nombre`, `descripcion`, `faccion`, `imagen`, `banner
 
 
 -- Volcando estructura para tabla wildstardb.razas_historia
-DROP TABLE IF EXISTS `razas_historia`;
 CREATE TABLE IF NOT EXISTS `razas_historia` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `raza` int(10) NOT NULL,
@@ -285,7 +319,6 @@ INSERT INTO `razas_historia` (`id`, `raza`, `orden`, `texto`) VALUES
 
 
 -- Volcando estructura para tabla wildstardb.region
-DROP TABLE IF EXISTS `region`;
 CREATE TABLE IF NOT EXISTS `region` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) NOT NULL DEFAULT '0',
@@ -305,7 +338,6 @@ INSERT INTO `region` (`id`, `nombre`, `faccion`) VALUES
 
 
 -- Volcando estructura para tabla wildstardb.region_descripciones
-DROP TABLE IF EXISTS `region_descripciones`;
 CREATE TABLE IF NOT EXISTS `region_descripciones` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `id_region` int(10) NOT NULL,
@@ -340,7 +372,6 @@ INSERT INTO `region_descripciones` (`id`, `id_region`, `texto`, `orden`) VALUES
 
 
 -- Volcando estructura para tabla wildstardb.region_imagenes
-DROP TABLE IF EXISTS `region_imagenes`;
 CREATE TABLE IF NOT EXISTS `region_imagenes` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `id_region` int(10) NOT NULL,
@@ -354,7 +385,6 @@ CREATE TABLE IF NOT EXISTS `region_imagenes` (
 
 
 -- Volcando estructura para tabla wildstardb.usuarios
-DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) DEFAULT NULL,
@@ -367,6 +397,33 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 INSERT INTO `usuarios` (`id`, `nombre`, `pass`) VALUES
 	(1, 'chapa', 'Fizios84');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
+
+
+-- Volcando estructura para tabla wildstardb.videos
+CREATE TABLE IF NOT EXISTS `videos` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL DEFAULT '0',
+  `youtube-id` varchar(100) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+
+-- Volcando datos para la tabla wildstardb.videos: ~13 rows (aproximadamente)
+/*!40000 ALTER TABLE `videos` DISABLE KEYS */;
+INSERT INTO `videos` (`id`, `nombre`, `youtube-id`) VALUES
+	(1, 'Que es Widlstar', '_4_riSI7Ydg'),
+	(2, 'Dominion', '2FhB3iYv4Ng'),
+	(3, 'Exiles', 'fn8648VGMKM'),
+	(4, 'Combat - Telegraphs', 'PgFo28scfYM'),
+	(5, 'Housing', 'ScEliEh2_Xo'),
+	(6, 'Paths - Soldier', 'AYpD2c59Rug'),
+	(7, 'Paths - Explorer', '3mgXHHtPpGI'),
+	(8, 'Clases - Draken', 'Kd3BJADY7uw'),
+	(9, 'Musica - Creacion Personajes', 'oqkLfJRaRv8'),
+	(10, 'Dev Speak - Housing', 'YlP8ShpFZII'),
+	(11, 'Dev Speak - Movement', '-qo5nrkYYI0'),
+	(12, 'Dev Speak - Paths', 'yJkfhxLEhEU'),
+	(13, 'Paths', 'lmCyPXv5APY');
+/*!40000 ALTER TABLE `videos` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

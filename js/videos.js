@@ -1,3 +1,3 @@
 $(document).ready(function(){
-	 $("a.youtube").YouTubePopup();
+	 $("a.youtube.iframe").fancybox();
 });
