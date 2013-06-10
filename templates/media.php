@@ -8,6 +8,8 @@ $css_array[]="videos.css";
 $css_array[]="imagenes.css";
 $js_array[]="videos.js";
 $js_array[]="imagenes.js";
+$css_array[]="jquery.fancybox-1.3.4.css";
+$js_array[]="jquery.fancybox-1.3.4.js";
 
 $media = new Media();
 ?>
