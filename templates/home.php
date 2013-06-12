@@ -24,7 +24,7 @@ $css_array[] = "home.css";
 	                <div class="span3">
 	                  <a href="/news/noticia/<?= urlencode($noticia->titulo)?>"><img src="<?= $noticia->imagen?>" width="100%"></a>
 	                </div>
-	                <div class="span5">
+	                <div class="span8">
 	                  <a href="/news/noticia/<?= urlencode($noticia->titulo)?>"><h3><?= $noticia->titulo?></h3></a>
 	                  <p><?= $noticia->resumen?></p>
 	                </div>
