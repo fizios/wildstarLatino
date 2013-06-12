@@ -34,6 +34,7 @@ if (isset($js_array)){
     <?php foreach ($css_array as $css):?>
     	<link rel="stylesheet" href="/css/<?php echo $css?>">
     <?php endforeach;?>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <?php foreach ($js_array as $js):?>
     	<script src="/js/<?php echo $js?>"></script>
     <?php endforeach;?>

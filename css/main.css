@@ -2,7 +2,7 @@ body#WL-Body{
 	background: url(/imagenes/main-bg.jpg) no-repeat 50% 0;
 	color: white;
 	background-color: #000509;
-	font-family: "Comic Sans MS";	
+	font-family: 'Open Sans', sans-serif;	
 }
 
 h1, h2, h3, h4, h5{
