@@ -11,7 +11,7 @@ if ($accion == "guardar"){
 		$titulo = $_POST['titulo'];
 		$resumen = mysql_real_escape_string($_POST['resumen']);
 		$fecha = $_POST['fecha'];
-		$cuerpo = mysql_real_escape_string($_POST['cuerpo']);
+		$cuerpo = ($_POST['cuerpo']);
 		$imagen = $_POST['imagen'];
 		
 		$query = 'UPDATE noticias SET';
@@ -30,7 +30,7 @@ if ($accion == "guardar"){
 		$titulo = $_POST['titulo'];
 		$resumen = mysql_real_escape_string($_POST['resumen']);
 		$fecha = $_POST['fecha'];
-		$cuerpo = mysql_real_escape_string($_POST['cuerpo']);
+		$cuerpo = ($_POST['cuerpo']);
 		$imagen = $_POST['imagen'];
 		
 		$query = "INSERT INTO noticias (titulo, resumen, fecha, cuerpo, imagen)";
