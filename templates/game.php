@@ -58,13 +58,14 @@ $mis_paths = $paths->paths;
 	    <div class="row">
 	      <h1><a href="/clases">Clases</a></h1>
 	      <div class="span10 clases">
-	        <div class="row">
-	        	<?php foreach ($clases as $clase):?>
-	        		<div class="span2">
-	        			<a href="/clases/<?php echo ucfirst($clase->nombre)?>"><img src="<?php echo $clase->imagen?>"></a>
+	        <?php foreach ($clases as $clase):?>
+	        	<div class="span2">
+        			<h4><?php echo ucfirst($clase->nombre)?></h4>
+	        		<div class="clase span2">
+	        			<a href="/clases/<?php echo ucfirst($clase->nombre)?>" alt="<?php echo ucfirst($clase->nombre)?>"><img src="<?php echo $clase->imagen?>"></a>
 	          		</div>
-	        	<?php endforeach;?>
-	        </div>
+	        	</div>
+	        <?php endforeach;?>
 	      </div>
 	    </div>
 	  </div>

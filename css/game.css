@@ -2,11 +2,10 @@
 	margin: 0;
 }
 
-.game div.container .clases .span2 {
+.game div.container .clases .clase.span2 {
 	width: 100px;
 	border: 2px solid white;
 	height: 135px;
-	margin: 60px;
 }
 .game div.container .clases .span2:hover,.game div.container .paths .span2:hover{
 	border-color: #005580;
