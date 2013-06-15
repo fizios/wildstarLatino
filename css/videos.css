@@ -1,7 +1,7 @@
 .videos li {
 width: 240px;
 list-style: none;
-border: 1px solid;
+border: 1px solid #444;
 margin: 20px;
 float: left;
 background-color: black;

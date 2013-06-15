@@ -33,7 +33,7 @@ margin: 15px;
   margin:15px;
 }
 .raza.container .row{
-	border: 2px solid white;
+	border: 2px solid #444;
 }
 .raza.container .row:hover{
 	border-color:#005580;

@@ -8,7 +8,7 @@ DirectoryIndex index.php
 
 #News
 Rewriterule ^news/?$ /templates/news.php
-Rewriterule ^news/noticia/([0-9]*)?$ /templates/noticia.php?noticia=$1
+Rewriterule ^news/noticia/(.*)?$ /templates/noticia.php?noticia=$1
 
 #Razas
 Rewriterule ^razas/?$ /templates/razas.php

@@ -26,6 +26,11 @@ line-height: 0.6;
 overflow: hidden;
 margin: 20px 0;
 }
+
+.footer .brands img{
+	max-width: 70%;
+}
+
 .footer .brands ul {
 display: inline;
 overflow: hidden;
@@ -93,5 +98,9 @@ margin: 0 10px 5px 21px;
 .container a:hover{
 	text-decoration: none;
 	color: #005580;
+}
+
+li {
+	border-color: #444;
 }
 
