@@ -25,6 +25,7 @@ $divshot_css = "";
 <h1> Menu de edicion </h1>
 <ul>
 	<li><a href="/content-admin/noticias">Noticias</a></li>
+	<li><a href="/content-admin/videos">Videos</a></li>
 </ul>
 
 </div>

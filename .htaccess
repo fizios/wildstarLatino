@@ -8,7 +8,7 @@ DirectoryIndex index.php
 
 #News
 Rewriterule ^news/?$ /templates/news.php
-Rewriterule ^news/noticia/(.*)?$ /templates/noticia.php?noticia=$1
+Rewriterule ^news/noticia/([0-9]*)?$ /templates/noticia.php?noticia=$1
 
 #Razas
 Rewriterule ^razas/?$ /templates/razas.php
@@ -61,6 +61,10 @@ Rewriterule ^content-admin/admin/?$ /templates/admin/menu.php
 #News Admin
 Rewriterule ^content-admin/noticias/?$ /templates/admin/Noticias/noticias_list.php
 Rewriterule ^content-admin/noticias/nuevo/?$ /templates/admin/Noticias/noticias_abm.php
-Rewriterule ^content-admin/noticias/editar/(.*)/?$ /templates/admin/Noticias/noticias_abm.php?id=$1
-Rewriterule ^content-admin/noticias/accion/(.*)/(.*)/?$ /src/Admin/Noticias/dbActionNoticias.php?action=$1&id=$2
-
+Rewriterule ^content-admin/noticias/editar/([0-9]*)/?$ /templates/admin/Noticias/noticias_abm.php?id=$1
+Rewriterule ^content-admin/noticias/accion/(.*)/([0-9]*)/?$ /src/Admin/Noticias/dbActionNoticias.php?action=$1&id=$2
+#Videos Admin
+Rewriterule ^content-admin/videos/?$ /templates/admin/videos/videos_list.php
+Rewriterule ^content-admin/videos/nuevo/?$ /templates/admin/videos/videos_abm.php
+Rewriterule ^content-admin/videos/editar/([0-9]*)/?$ /templates/admin/videos/videos_abm.php?id=$1
+Rewriterule ^content-admin/videos/accion/(.*)/([0-9]*)/?$ /src/Admin/videos/dbActionvideos.php?action=$1&id=$2

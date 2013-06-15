@@ -1,0 +1,1 @@
+ALTER TABLE `videos`	CHANGE COLUMN `youtube-id` `youtube_id` VARCHAR(100) NOT NULL DEFAULT '0' AFTER `nombre`;
