@@ -23,7 +23,7 @@ $videos = new Videos();
 	<ul class="videos-list">
 		<?php foreach ($videos->getVideos() as $key => $video): ?>
 			<li>
-				<a class="youtube iframe"  href="http://www.youtube.com/embed/<?php echo $video['youtube_id'] ?>?autoplay=1" >
+				<a class="youtube iframe"  href="http://www.youtube.com/embed/<?php echo $video['youtube_id'] ?>?autoplay=1&hl=es&cc_load_policy=1" >
 					<p><?php echo $video['nombre'] ?></p>
 					<img src="http://img.youtube.com/vi/<?php echo $video['youtube_id'] ?>/0.jpg" />
 				</a>
