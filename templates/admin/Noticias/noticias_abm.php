@@ -15,7 +15,7 @@ if (isset($_GET['id'])){
 }
 
 $divshot_css = "";
-$js_array[] = "";
+$js_array[] = "/admin/admin_noticia.js";
 
 ?>
 
@@ -28,7 +28,7 @@ $js_array[] = "";
 		<label>titulo:</label>
 		<input type="text" name="titulo" value="<?= $noticia->titulo?>"/>
 		<label>Fecha:</label>
-		<input type="text" name="fecha" value="<?= $noticia->fecha?>"/>
+		<input id="input_fecha" type="text" name="fecha" value="<?= $noticia->fecha?>"/>
 		<label>resumen:</label>
 		<textarea rows="" cols="" name="resumen"><?= $noticia->resumen?></textarea>
 		<label>imagen:</label>

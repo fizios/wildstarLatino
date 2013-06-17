@@ -7,12 +7,13 @@ $css_array[] = "bootstrap-responsive.css";
 $css_array[] = "normalize.css";
 $css_array[] = "foundation.css";
 $css_array[] = "jquery-ui.css";
+$css_array[] = "jquery-ui/jquery-ui-1.9.2.custom.css";
 $css_array[] = "main.css";
 $css_array[] = "titulo.css";
 $css_array[] = "nav-bar.css";
 
-$main_js_array[] = "jquery.min.js";
-$main_js_array[] = "jquery-ui.min.js";
+$main_js_array[] = "jquery-ui/jquery-1.8.3.js";
+$main_js_array[] = "jquery-ui/jquery-ui-1.9.2.custom.js";
 $main_js_array[] = "bootstrap.min.js";
 $main_js_array[] = "nav-bar.js";
 
