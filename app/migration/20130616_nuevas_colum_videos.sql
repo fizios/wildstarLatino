@@ -1,0 +1,1 @@
+ALTER TABLE `videos` ADD COLUMN `seccion` VARCHAR(50) NULL AFTER `youtube_id`,	ADD COLUMN `subseccion` VARCHAR(50) NULL AFTER `seccion`;
