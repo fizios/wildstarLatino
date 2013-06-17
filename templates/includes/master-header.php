@@ -24,6 +24,7 @@ if (isset($js_array)){
 }
 
 ?>
+<!DOCTYPE HTML>
 <html>
   
   <head>
