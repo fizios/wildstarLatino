@@ -67,4 +67,4 @@ Rewriterule ^content-admin/noticias/accion/(.*)/([0-9]*)/?$ /src/Admin/Noticias/
 Rewriterule ^content-admin/videos/?$ /templates/admin/videos/videos_list.php
 Rewriterule ^content-admin/videos/nuevo/?$ /templates/admin/videos/videos_abm.php
 Rewriterule ^content-admin/videos/editar/([0-9]*)/?$ /templates/admin/videos/videos_abm.php?id=$1
-Rewriterule ^content-admin/videos/accion/(.*)/([0-9]*)/?$ /src/Admin/Videos/dbActionvideos.php?action=$1&id=$2
+Rewriterule ^content-admin/videos/accion/(.*)/([0-9]*)/?$ /src/Admin/Videos/dbActionVideos.php?action=$1&id=$2
