@@ -41,6 +41,7 @@ margin: 0 auto;
 width: 17%;
 float: left;
 margin: 0 45px;
+list-style: none;
 }
 .footer .disclaimer{
 display: block;
