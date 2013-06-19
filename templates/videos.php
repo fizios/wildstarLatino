@@ -2,7 +2,14 @@
 include $_SERVER['DOCUMENT_ROOT'].'/includes/loader.php';
 include $_SERVER['DOCUMENT_ROOT'].'/src/Media/Videos.php';
 
-$pagina_pedida = (int)$_GET['pagina'];
+
+
+if (isset($_GET['pagina'])){
+	$pagina_pedida = (int)$_GET['pagina'];
+}else{
+	$pagina_pedida = 1;
+}
+
 if($pagina_pedida == 0){
 	header("Location:/media/videos?pagina=1");
 }
