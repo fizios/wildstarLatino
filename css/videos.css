@@ -15,3 +15,29 @@ background-color: black;
 #fancybox-wrap{
 	top: 25% !important;
 }
+
+.contenedor.videos{
+	overflow: hidden;	
+}
+
+.pagination.pagination-centered {
+	overflow: hidden;
+	height: 55px;
+}
+
+
+.container .pagination ul > li > a {
+	background-color: #1b1b1b;
+	border: 1px solid;
+}
+.container .pagination ul > li.disabled > a,.container .pagination ul > li.disabled > a:hover {
+	cursor:default;
+	background-color: black;
+}
+.container .pagination ul > li.active > a {
+	background-color: white;
+	color: black;
+}
+.container .pagination ul > li > a:hover{
+
+}

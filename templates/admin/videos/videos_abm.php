@@ -29,6 +29,10 @@ $js_array[] = "";
 		<input type="text" name="nombre" value="<?= $video->nombre?>"/>
 		<label>Id Youtube:</label>
 		<input type="text" name="youtube-id" value="<?= $video->youtubeId?>"/>
+		<label>Seccion:</label>
+		<input type="text" name="seccion" value="<?= $video->seccion?>"/>
+		<label>SubSeccion:</label>
+		<input type="text" name="subseccion" value="<?= $video->subseccion?>"/>
 		<input type="submit" value="Guardar" />
 	</form>
 </div>

@@ -6,6 +6,8 @@ class Video extends WLClases{
 	public $id;
 	public $nombre = "";
 	public $youtubeId = "";
+	public $seccion = "";
+	public $subseccion = "";
 	
 	function __construct($id = 0){
 		
@@ -14,9 +16,12 @@ class Video extends WLClases{
 		if($id != 0){
 			$video = $this->db->get_results("SELECT * FROM videos where id= ".$id,ARRAY_A);
 			$video = current($video);
+			
 			$this->id = $id;
 			$this->nombre = $video['nombre'];
 			$this->youtubeId = $video['youtube_id'];
+			$this->seccion = $video['seccion'];
+			$this->subseccion = $video['subseccion'];
 		}
 	}
 }

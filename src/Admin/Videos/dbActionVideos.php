@@ -8,12 +8,17 @@ $accion = $_GET['action'];
 if ($accion == "guardar"){
 	if (isset($_GET['id']) && $_GET['id'] != ''){
 		$id = $_GET['id'];
+		
 		$nombre = $_POST['nombre'];
 		$youtubeId = $_POST['youtube-id'];
+		$seccion = $_POST['seccion'];
+		$subseccion = $_POST['subseccion'];
 		
 		$query = 'UPDATE videos SET';
 		$query .= " nombre = '$nombre',";
-		$query .= " youtube_id = '$youtubeId' ";
+		$query .= " youtube_id = '$youtubeId', ";
+		$query .= " seccion = '$seccion', ";
+		$query .= " subseccion = '$subseccion' ";
 		$query .= " WHERE id = $id";
 		
 		$db->query($query);
@@ -23,9 +28,11 @@ if ($accion == "guardar"){
 	}else{
 		$nombre = $_POST['nombre'];
 		$youtubeId = $_POST['youtube-id'];
+		$seccion = $_POST['seccion'];
+		$subseccion = $_POST['subseccion'];
 		
-		$query = "INSERT INTO videos (nombre, youtube_id)";
-		$query .= " VALUES ('$nombre', '$youtubeId')";
+		$query = "INSERT INTO videos (nombre, youtube_id, seccion, subseccion)";
+		$query .= " VALUES ('$nombre', '$youtubeId', '$seccion', '$subseccion')";
 		
 		$db->query($query);
 		
