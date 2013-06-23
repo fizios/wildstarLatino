@@ -31,28 +31,6 @@ $divshot_css = "https://djyhxgczejc94.cloudfront.net/builds/a078ced5eeec49a92f29
 	            </div>
 	          </div>
           <?php endforeach;?>
-          <div class="raza container">
-            <div class="row">
-              <div class="span2 imagen">
-                <img src="/imagenes/Clases/signo_interrogacion.gif"> 
-              </div>
-              <div class="span3">
-                <h3>????????</h3>
-                <p>Pronto !!!!</p>
-              </div>
-            </div>
-          </div>
-          <div class="raza container">
-            <div class="row">
-              <div class="span2 imagen">
-                <img src="/imagenes/Clases/signo_interrogacion.gif"> 
-              </div>
-              <div class="span3">
-                <h3>????????</h3>
-                <p>Pronto !!!!</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 

@@ -1,22 +1,92 @@
+.game{
+	background-color: #000509;
+}
+
+.game div.container.main .span8{
+	margin-left: 50px;
+}
+
+.game div.container.main .span3{
+	margin-top: 25px;
+	border: 1px solid #444;
+}
+
+.game div.container .row-fluid .span12{
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+
+.game div.container.razas .row-fluid .span12 .span6{
+	width: 520px;
+}
+
+.game div.container .row-fluid .span12 h1{
+	display: initial;
+	margin-right: 15px;
+}
+.game div.container.razas .row-fluid .span12 .portrait{
+	width: 170px;
+	height: 150px;
+	border: 1px solid #2795b6;
+	margin: 5px;
+}
+
+.game div.container.razas .row-fluid .span12 .exiles,.game div.container .row-fluid .span12 .dominion{
+	margin-top: 20px;
+}
+
+.game div.container.razas .row-fluid .span12 .exiles .portrait:hover {
+background-position-x: -427px;
+}
+
+.game div.container.razas .row-fluid .span12 .portrait:hover{
+	border-color: #005580;	
+}
+
+.game div.container .row-fluid .span12 span{
+	
+}
+
+.game div.container .row-fluid .span12 span a{
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.game div.container.razas .row-fluid .span12 .logo{
+	width: 100px;
+}
+
+.game div.container.razas .row-fluid .span12 .retratos{
+	width: 400px;
+}
+
 .game div.container .razas .span2{
 	margin: 0;
 }
 
 .game div.container .clases .clase.span2 {
 	width: 100px;
-	border: 2px solid white;
+	border: 2px solid #2795b6;
 	height: 135px;
+	background-color: black;
 }
-.game div.container .clases .span2:hover,.game div.container .paths .span2:hover{
+.game div.container .clases .span2.path:hover,.game div.container .paths .span2.path:hover{
 	border-color: #005580;
 }
-.game div.container .paths .span2 {
-	width: 160px;
-	border: 2px solid;
-	height: 175px;
-	margin: 37px;
+
+.game div.container .paths .path-container{
+	margin: 30px 40px;
 }
 
+.game div.container .paths .span2.path {
+	width: 160px;
+	border: 2px solid #2795b6;
+	height: 175px;
+}
+
+.game div.container.regiones .iconos{
+	margin-top: 30px;
+}
 
 .game div.container.regiones .iconos img{
 	margin: 0 110px;
@@ -24,6 +94,7 @@
 .game div.container.housing a img{
 	border: 1px solid white;
 	margin-left: 100px;
+	margin-top: 30px;
 }
 .game div.container.housing a img:hover{
 	border-color: #005580;
