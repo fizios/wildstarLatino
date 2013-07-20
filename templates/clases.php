@@ -22,7 +22,7 @@ $divshot_css = "https://djyhxgczejc94.cloudfront.net/builds/a078ced5eeec49a92f29
           	<div class="raza container">
 	            <div class="row">
 	              <div class="span2 imagen">
-	                <img src="<?php echo $clase->imagen?>"> 
+	                <a href="/clases/<?php echo ucfirst($clase->nombre)?>"><img src="<?php echo $clase->imagen?>"> </a>
 	              </div>
 	              <div class="span3">
 	                <a href="/clases/<?php echo ucfirst($clase->nombre)?>"><h3><?php echo ucfirst($clase->nombre)?></h3></a>

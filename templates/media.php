@@ -17,7 +17,7 @@ $media = new Media();
 <?php include 'includes/master-header.php'?>
 <div class="container body">
 	
-	<h1><a href="/media/videos" alt="Videos"> Videos </a></h1>
+	<h1> Videos </h1><a href="/media/videos" alt="Videos">ver mas</a>
 	
 	<ul class="videos-list videos">
 		<?php foreach ($media->videos as $key => $video): ?>
@@ -30,7 +30,7 @@ $media = new Media();
 		<?php endforeach; ?>
 	</ul>
 	
-	<h1><a href="/media/imagenes" alt="Imagenes">Imagenes</a></h1>
+	<h1>Imagenes</h1><a href="/media/imagenes" alt="Imagenes">ver mas</a>
 	
 	<ul class="imagenes">
 		<?php foreach ($media->imagenes as $key => $imagen): ?>

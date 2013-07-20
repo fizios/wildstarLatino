@@ -19,7 +19,7 @@ $js_array[] = "noticias_list.js"
 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/includes/master-header.php'?>
 <div class="container body">
-<h3><a href="content-admin/admin/">Menu</a></h3>
+<h3><a href="/content-admin/admin/">Menu</a></h3>
 <h1> Noticias </h1>
 	<span><a href="/content-admin/videos/nuevo">Nuev Video</a></span>
 	<ul>

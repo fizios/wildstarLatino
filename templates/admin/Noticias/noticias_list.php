@@ -8,7 +8,7 @@ if(!isset($_SESSION['Usuario_log']) || !$_SESSION['Usuario_log']){
 	header("Location: /");
 }
 
-$noticias = new Noticias();
+$noticias = new Noticias(10,1);
 $misNoticias = $noticias->noticias;
 
 $divshot_css = "";

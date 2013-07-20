@@ -1,5 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'].'/src/WLClases.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/src/Media/Imagenes.php';
 
 class Clase extends WLClases{
     
@@ -14,6 +15,7 @@ class Clase extends WLClases{
     public $descripcion_corta = "";
     public $descripcion_larga = "";
     public $imagen = "";
+	public $imagenes;
     public $banner = "";
     public $razas = array();
     
@@ -38,6 +40,7 @@ class Clase extends WLClases{
         $this->setImagen();
         $this->setBanner();
         $this->setRazas();
+		$this->setImagenes();
         
     }
     
@@ -73,5 +76,14 @@ class Clase extends WLClases{
     }
     public function setRazas(){
     	$this->razas =  $this->db->get_results("SELECT r.nombre FROM razas r left join clase_raza cr on cr.id_raza=r.id left join clases c on c.id=cr.id_clase where c.id = ".$this->claseId,ARRAY_A);
+    }
+    private function setImagenes(){
+    	$cantidad = 10;
+		$pagina = 1;
+		$categoria = 'clases';
+		$subcategoria = $this->nombre;
+		
+		$imagenes = new Imagenes($pagina,$cantidad,$categoria,$subcategoria);
+		$this->imagenes = $imagenes->getImagenes();
     }
 }

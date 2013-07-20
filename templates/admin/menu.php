@@ -26,6 +26,7 @@ $divshot_css = "";
 <ul>
 	<li><a href="/content-admin/noticias">Noticias</a></li>
 	<li><a href="/content-admin/videos">Videos</a></li>
+	<li><a href="/content-admin/imagenes">Imagenes</a></li>
 </ul>
 
 </div>

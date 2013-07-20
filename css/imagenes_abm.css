@@ -1,0 +1,13 @@
+div.previa-contenedor{
+	width: 300px;
+	margin: 0 auto;
+}
+
+img.previa {
+	width: 100%;
+	height: 100%;	
+}
+
+select#subcategoria[disabled]{
+	background-color: grey;
+}

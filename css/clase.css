@@ -11,3 +11,23 @@ margin-left: 75px;
 strong{
 	color: darkmagenta;
 }
+
+/*Carousel de imagenes*/
+
+.clase #myCarousel {
+	width: 650px;
+	margin: 0 auto;
+}
+
+.clase #myCarousel .carousel-inner{
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+.clase #myCarousel .carousel-inner .item img{
+	margin: 40px auto;
+}
+
+.clase #myCarousel a.carousel-control{
+	line-height: 0.35;
+}

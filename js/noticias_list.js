@@ -4,4 +4,12 @@ $(document).ready(function(){
 			ev.preventDefault();
 		}
 	});
+	
+	$("select.categoria").change(function(){
+		
+		var val = $(this).val();
+		
+		$("select.subcategoria:visible").attr("disabled",true).hide();
+		$("select."+val).removeAttr("disabled").show();
+	});
 });

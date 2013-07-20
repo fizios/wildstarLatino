@@ -4,3 +4,24 @@ background-color: #000509;
 .container.raza .span10.imagen{
 border: 1px solid;
 }
+
+/*Carousel de imagenes*/
+
+.raza #myCarousel {
+	width: 650px;
+	margin: 0 auto;
+}
+
+.raza #myCarousel .carousel-inner{
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+.raza #myCarousel .carousel-inner .item img{
+	margin: 40px auto;
+}
+
+.raza #myCarousel a.carousel-control{
+	line-height: 0.35;
+}
+

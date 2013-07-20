@@ -44,11 +44,22 @@ $divshot_css= "";
       </div>
       <div class="span10">
         <h3>Imagenes</h3>
-        <img src="//app.divshot.com/img/placeholder-100x100.gif">
-        <img src="//app.divshot.com/img/placeholder-100x100.gif">
-        <img src="//app.divshot.com/img/placeholder-100x100.gif">
-        <img src="//app.divshot.com/img/placeholder-100x100.gif">
-        <img src="//app.divshot.com/img/placeholder-100x100.gif"> 
+        <div id="myCarousel" class="carousel slide">
+		  <ol class="carousel-indicators">
+		    <?php foreach ($clase->imagenes as $key => $imagen):?>
+		    	<li data-target="#myCarousel" data-slide-to="<?=$key?>" <?=($key==0)?'class="active"':''?>></li>
+		    <?php endforeach;?>
+		  </ol>
+		  <!-- Carousel items -->
+		  <div class="carousel-inner">
+		  	<?php foreach ($clase->imagenes as $key => $imagen):?>
+		    	<div class="<?=($key==0)?'active':''?> item"><img src="<?=$imagen->url?>"></div>
+		    <?php endforeach;?>
+		  </div>
+		  <!-- Carousel nav -->
+		  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		</div>
       </div>
       <div class="span10">
         <h3>Videos</h3>

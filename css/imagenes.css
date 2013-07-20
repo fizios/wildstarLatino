@@ -1,4 +1,4 @@
-.imagenes li{
+.imagenes .item-img{
 	width: 250px;
 	height: 140px;
 	list-style: none;
@@ -6,8 +6,28 @@
 	margin: 15px;
 	border: 1px solid #444;
 	border-radius: 3px;
+	overflow: hidden
 }
 #WL-Body #fancybox-right-ico, #WL-Body #fancybox-left-ico{
 	background-image: url('/imagenes/iconos/botones/fancybox.png');
 }
 
+#myCarousel {
+	background-color: #000509;
+}
+
+#myCarousel .carousel-indicators{
+	top: -10px;
+	right: 0;
+}
+
+#myCarousel .carousel-inner {
+	margin: 60px 0 0 40px;
+}
+
+#myCarousel a.carousel-control{
+	line-height: 0.35;
+}
+#myCarousel a.carousel-control.right{
+	right: -20px;
+}
