@@ -1,4 +1,4 @@
-.imagenes .item-img{
+.imagenes .item-img, .imagenes li{
 	width: 250px;
 	height: 140px;
 	list-style: none;
